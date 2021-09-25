@@ -9,9 +9,9 @@
 			<div class="column right aligned">
 				{{if and .CanWriteProjects (not .Repository.IsArchived) .PageIsProjects}}
 					<a class="ui green button show-modal item" href="{{$.RepoLink}}/issues/new?project={{$.Project.ID}}">{{.i18n.Tr "repo.issues.new"}}</a>
-					<a class="ui green button show-modal item" data-modal="#new-board-item">{{.i18n.Tr "new_project_board"}}</a>
+					<a class="ui green button show-modal item" data-modal="#new-board-column">{{.i18n.Tr "new_board_column"}}</a>
 				{{end}}
-				<div class="ui small modal" id="new-board-item">
+				<div class="ui small modal" id="new-board-column">
 					<div class="header">
 						{{$.i18n.Tr "repo.projects.board.new"}}
 					</div>
